@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../multimedia/FONDOWEB.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: 'Prompt', sans-serif;
+}
+
+
+.borderRight{
+    border-right: solid 1px #49475b;
+}
+
+/*Portada Main correcto*/
+
+.mainIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 150px;   
+}
+.portada{
+    background-color: #f5e6c5;
+}
+
+.portadaTitulo{
+    font-weight: 900;
+    color: #49475b;
+}
+
+/*Portada pasos como funciona*/
+
+#comoFunciona{
+    font-weight: 600;
+    font-size: 25pt;
+    padding: 40px 0 25px 0;
+    color: #14080e;
+    text-transform: uppercase;
+}
+
+.pasosIndex{
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comoBoxFunciona{
+    background-color: #49475b;
+    color: white;
+    width: 20%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: solid 2px #e9eb9e;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.comoBoxFunciona:hover{
+    transform: scale(1.05);
+}
+
+.comoBoxFunciona h5{
+    font-weight: 400;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: solid 2px #799496;
+}
+
+.flechaPasos{
+    background-image: url(../multimedia/flecha.png);
+    background-position: center;
+    background-size: cover;
+    width: 1rem;
+    height: 1rem;
+}
+
+.iconoBoxFunciona{
+    background-position: center;
+    background-size: cover;
+    width: 4rem;
+    height: 4rem;
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.imgPaso1
+{
+    background-image: url(../multimedia/iconoPaso1.jpg);
+}
+
+.imgPaso2
+{
+    background-image: url(../multimedia/iconoPaso2.jpg);
+}
+
+.imgPaso3
+{
+    background-image: url(../multimedia/iconoPaso3.jpg);
+}
+
+.imgPaso4
+{
+    background-image: url(../multimedia/iconoPaso4.jpg);
+}
+
+/*Footer*/
+
+.footer{
+    position: bottom;
+    height: 100%;
+    margin-top: 3rem;
+    padding: 1rem 0 2rem 0;
+    background-color: #e9eb9e;
+    border-top: solid 3px #799496 ;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+        "tituFoot imgFoot"
+        "datosFoot imgFoot";
+    align-items: flex-start;   
+}
+
+.footerContacto{
+    grid-area: tituFoot;
+    padding-left:15%;
+    font-size: 20pt;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.footerDatos{
+    grid-area: datosFoot;
+    padding-left:15%;
+}
+
+.imgFooter{
+    padding-right: 10%;
+    grid-area: imgFoot;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+/*Seccion MODELOS*/
+
+.mainModelos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;  
+}
+
+.boxModelos{
+    background-color: #17a2b8;
+    margin: 0 20px 15px 20px;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5px;
+    border: solid 2px #e9eb9e;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 3rem 12rem 7rem 3rem;
+    grid-template-areas: 
+        "titulo titulo"
+        "img img"
+        "parrafo parrafo"
+        "precio boton";
+    justify-items: center;
+    align-items: center;
+}
+
+.boxModelos:hover{
+    transform: scale(1.03);
+}
+
+.boxModelos h2{
+    grid-area: titulo;
+    align-self: flex-end;
+    color: #49475b;
+}
+
+.imgBoxModelos{
+    grid-area: img;
+    width: 90%;
+    height: 10rem;
+    background-image: url(../multimedia/productos.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.parrafoBoxModelos{
+    grid-area: parrafo;
+    width: 90%;
+}
+
+.precioBoxModelos{
+    grid-area: precio;
+    justify-self: left;
+    padding-left: 2rem;
+}
+.botonBoxModelos{
+    grid-area: boton;
+    background-color: #49475b;
+    border-radius: 2rem;
+    border: solid 3px #e9eb9e;
+}
+.botonBoxModelos a{
+    padding: 8px;
+    color: #e9eb9e;
+}
+.botonBoxModelos:hover{
+    transform: scale(1.03);
+}
+
+/*Seccion PROMOS*/
+
+.mainPromos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+/*Seccion CONTACTO*/
+
+.mainContacto{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+#mapaContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+/*Seccion Pedidos*/
+
+.mainPedidos{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 576px) {
+    .mainIndex{
+        margin-top: 230px;
+    }
+    .mainPedidos{
+        margin-top: 230px;
+    }
+    .mainModelos{
+        margin-top: 230px;
+    }
+    .mainPromos{
+        margin-top: 230px;
+    }
+    .mainContacto{
+        margin-top: 230px;
+    }
+    .borderRight{
+        border: none;
+    }
+    .footerContacto{
+        font-size: 14pt;
+    }
+    .footerDatos{
+        font-size: 9pt;
+    }
+}
+
+/*Animaciones*/
+
+.imgPortada{
+    animation-name: animaImgPortada;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes animaImgPortada{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.promo1{
+    animation-name: animaPromo1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+.promo2{
+    animation-name: animaPromo2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+.promo3{
+    animation-name: animaPromo3;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+@keyframes animaPromo1{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    60%{
+        opacity: 1;
+    }
+}
+
+@keyframes animaPromo2{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(100px)
+    }
+    80%{
+        opacity: 1;
+    }
+}
+
+@keyframes animaPromo3{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#divContactoIzq{
+    animation-name: animaDivCont1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+
+#divContactoDer{
+    animation-name: animaDivCont2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+
+@keyframes animaDivCont1{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px)
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animaDivCont2{
+    0%{
+        opacity: 0;
+        transform: translateY(100px)
+    }
+    100%{
+        opacity: 1;
+    }
+}
