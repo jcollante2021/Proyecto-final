@@ -7,13 +7,14 @@
     <meta name="keywords" content="fotos, impresiones, calidad, barato, kodak, gigantografia, polaroid, regalos, promos, combos">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     <title>Imprimi tus fotos y recuerdos en Papel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top border border-top-0 border-right-0 border-left-0 border-warning">
-        <a class="navbar-brand flex-grow-1" href="./index.html"> <img src="./multimedia/logoTresCuerdasHead.png" alt="logo TresCuerdas small"></a>
+        <a class="navbar-brand flex-grow-1" href="./index.html"> <img class="logoHead" src="./multimedia/logoTresCuerdasHead.png" alt="logo TresCuerdas small"></a>
         <ul class="navbar-nav">
             <li class="borderRight nav-item active"><a class="nav-link" href="./index.html">Inicio</a></li>
             <li class="borderRight nav-item"><a class="nav-link" href="./pages/pedido.html">Pedido</a></li>
@@ -21,24 +22,34 @@
             <li class="borderRight nav-item"><a class="nav-link" href="./pages/promos.html">Promos</a></li>
             <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
         </ul>
+        <div class="hamburguesaNav dropdown" data-toggle="dropdown">
+            <div class="lineaHambur"></div>
+            <div class="lineaHambur"></div>
+            <div class="lineaHambur"></div>
+        </div>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="./index.html">Inicio</a>
+            <a class="dropdown-item" href="./pages/pedido.html">Pedidos</a>
+            <a class="dropdown-item" href="./pages/modelos.html">Modelos</a>
+            <a class="dropdown-item" href="./pages/promos.html">Promos</a>
+            <a class="dropdown-item" href="./pages/contacto.html">Contacto</a>
+        </div>
     </nav>
     <main class="mainIndex">
-        <div class="container p-3 rounded shadow-lg portada">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="col">
-                        <div class="col-12">
-                            <h1 class="portadaTitulo">NUNCA FUE TAN FÁCIL IMPRIMIR TUS FOTOS</h1>
-                        </div>
-                        <div class="col-12">
-                            <p class="lead">Trabajamos con la mejor calidad en papel Kodak para que tus fotos duren mucho mas tiempo.</p>
-                        </div>
+        <div class="divPortada d-flex justify-content-end">
+            <div class="p-3 rounded shadow-lg portada">
+                <div class="col">
+                    <div class="col-12">
+                        <h1 class="portadaTitulo">NUNCA FUE TAN FÁCIL <br><span class="fontDancing">Imprimir tus fotos</span></h1>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-thumbnail rounded mx-auto d-block imgPortada" src="./multimedia/portada.jpg" alt="fotografias impresas">
-                </div>
-            </div>
+                    <div class="col-12">
+                        <p class="lead">Trabajamos con la mejor calidad en papel Kodak para que tus fotos duren mucho mas tiempo.</p>
+                    </div>
+                    <div class="col-12">
+                        <a href="./pages/promos.html" class="btn btn-warning mx-auto d-block" role="button">Conoce nuestras Promos</a>
+                    </div>
+                </div> 
+            </div>      
         </div>
         <h2 id="comoFunciona">¿Cómo funciona?</h2>
         <div class="pasosIndex">

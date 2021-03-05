@@ -1,398 +1,293 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+/*Mis Variables*/
+* {
+  margin: 0;
+  padding: 0; }
 
-body{
-    background-image: url("../multimedia/FONDOWEB.jpg");
-    background-attachment: fixed;
-    background-size: 100%;
-    font-family: 'Prompt', sans-serif;
-}
-
-
-.borderRight{
-    border-right: solid 1px #49475b;
-}
-
-/*Portada Main correcto*/
-
-.mainIndex{
-    display: flex;
+body {
+  background-image: url("../multimedia/FONDOWEB.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: 'Prompt', sans-serif; }
+  body .logoHead {
+    width: 6rem; }
+  body .borderRight {
+    border-right: solid 1px #49475b; }
+  body .hamburguesaNav {
+    width: 40px;
+    height: 40px;
+    background-color: #ffc107;
+    position: absolute;
+    right: 30px;
+    top: 25%;
+    border-radius: 5px;
+    display: none;
     flex-direction: column;
-    align-items: center; 
-    margin-top: 150px;   
-}
-.portada{
-    background-color: #f5e6c5;
-}
-
-.portadaTitulo{
-    font-weight: 900;
-    color: #49475b;
-}
-
-/*Portada pasos como funciona*/
-
-#comoFunciona{
-    font-weight: 600;
-    font-size: 25pt;
-    padding: 40px 0 25px 0;
-    color: #14080e;
-    text-transform: uppercase;
-}
-
-.pasosIndex{
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.comoBoxFunciona{
-    background-color: #49475b;
-    color: white;
-    width: 20%;
-    height: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
     justify-content: center;
-    align-content: center;
-    text-align: center;
-    border: solid 2px #e9eb9e;
-    border-radius: 8px;
-    padding: 5px;
-}
-
-.comoBoxFunciona:hover{
-    transform: scale(1.05);
-}
-
-.comoBoxFunciona h5{
-    font-weight: 400;
-    margin-top: 10px;
-    padding-top: 5px;
-    border-top: solid 2px #799496;
-}
-
-.flechaPasos{
-    background-image: url(../multimedia/flecha.png);
-    background-position: center;
-    background-size: cover;
-    width: 1rem;
-    height: 1rem;
-}
-
-.iconoBoxFunciona{
-    background-position: center;
-    background-size: cover;
-    width: 4rem;
-    height: 4rem;
-    border: solid 1px black;
-    border-radius: 50%;
-    padding: 5px;
-    margin-bottom: 15px;
-}
-
-.imgPaso1
-{
-    background-image: url(../multimedia/iconoPaso1.jpg);
-}
-
-.imgPaso2
-{
-    background-image: url(../multimedia/iconoPaso2.jpg);
-}
-
-.imgPaso3
-{
-    background-image: url(../multimedia/iconoPaso3.jpg);
-}
-
-.imgPaso4
-{
-    background-image: url(../multimedia/iconoPaso4.jpg);
-}
-
-/*Footer*/
-
-.footer{
-    position: bottom;
-    height: 100%;
-    margin-top: 3rem;
-    padding: 1rem 0 2rem 0;
-    background-color: #e9eb9e;
-    border-top: solid 3px #799496 ;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 25% 75%;
-    grid-template-areas: 
-        "tituFoot imgFoot"
-        "datosFoot imgFoot";
-    align-items: flex-start;   
-}
-
-.footerContacto{
-    grid-area: tituFoot;
-    padding-left:15%;
-    font-size: 20pt;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-.footerDatos{
-    grid-area: datosFoot;
-    padding-left:15%;
-}
-
-.imgFooter{
-    padding-right: 10%;
-    grid-area: imgFoot;
+    align-items: center;
+    cursor: pointer; }
+  body .dropdown-menu {
+    margin-left: 50%;
+    right: 30px; }
+  body .lineaHambur {
+    background-color: black;
+    width: 70%;
+    height: 4px;
+    margin: 3px; }
+  body .mainIndex {
     display: flex;
-    justify-content: flex-end;   
-}
-
-/*Seccion MODELOS*/
-
-.mainModelos{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px; }
+    body .mainIndex .divPortada {
+      padding: 100px;
+      width: 100%;
+      background-image: url(../multimedia/portada.jpg);
+      background-size: cover;
+      background-repeat: no-repeat; }
+      body .mainIndex .divPortada .portada {
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 450px; }
+        body .mainIndex .divPortada .portada .portadaTitulo {
+          font-size: 43pt;
+          font-weight: 900;
+          color: #17a2b8; }
+        body .mainIndex .divPortada .portada .fontDancing {
+          font-family: 'Dancing Script', cursive;
+          font-weight: 700;
+          font-size: 39pt;
+          color: #ffc107; }
+    body .mainIndex #comoFunciona {
+      font-weight: 600;
+      font-size: 25pt;
+      padding: 40px 0 25px 0;
+      color: #14080e;
+      text-transform: uppercase; }
+    body .mainIndex .pasosIndex {
+      width: 90vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      body .mainIndex .pasosIndex .comoBoxFunciona {
+        background-color: #49475b;
+        color: white;
+        width: 20%;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        border: solid 2px #e9eb9e;
+        border-radius: 8px;
+        padding: 5px; }
+        body .mainIndex .pasosIndex .comoBoxFunciona .iconoBoxFunciona {
+          background-position: center;
+          background-size: cover;
+          width: 4rem;
+          height: 4rem;
+          border: solid 1px black;
+          border-radius: 50%;
+          padding: 5px;
+          margin-bottom: 15px; }
+      body .mainIndex .pasosIndex .flechaPasos {
+        background-image: url(../multimedia/flecha.png);
+        background-position: center;
+        background-size: cover;
+        width: 1rem;
+        height: 1rem; }
+      body .mainIndex .pasosIndex .imgPaso1 {
+        background-image: url(../multimedia/iconoPaso1.jpg); }
+      body .mainIndex .pasosIndex .imgPaso2 {
+        background-image: url(../multimedia/iconoPaso2.jpg); }
+      body .mainIndex .pasosIndex .imgPaso3 {
+        background-image: url(../multimedia/iconoPaso3.jpg); }
+      body .mainIndex .pasosIndex .imgPaso4 {
+        background-image: url(../multimedia/iconoPaso4.jpg); }
+      body .mainIndex .pasosIndex .comoBoxFunciona:hover {
+        transform: scale(1.05); }
+  body .mainPedidos {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center; }
+  body .mainModelos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 150px;  
-}
-
-.boxModelos{
-    background-color: #17a2b8;
-    margin: 0 20px 15px 20px;
-    width: 20rem;
-    height: 25rem;
-    border-radius: 5px;
-    border: solid 2px #e9eb9e;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 3rem 12rem 7rem 3rem;
-    grid-template-areas: 
-        "titulo titulo"
-        "img img"
-        "parrafo parrafo"
-        "precio boton";
-    justify-items: center;
-    align-items: center;
-}
-
-.boxModelos:hover{
-    transform: scale(1.03);
-}
-
-.boxModelos h2{
-    grid-area: titulo;
-    align-self: flex-end;
-    color: #49475b;
-}
-
-.imgBoxModelos{
-    grid-area: img;
-    width: 90%;
-    height: 10rem;
-    background-image: url(../multimedia/productos.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.parrafoBoxModelos{
-    grid-area: parrafo;
-    width: 90%;
-}
-
-.precioBoxModelos{
-    grid-area: precio;
-    justify-self: left;
-    padding-left: 2rem;
-}
-.botonBoxModelos{
-    grid-area: boton;
-    background-color: #49475b;
-    border-radius: 2rem;
-    border: solid 3px #e9eb9e;
-}
-.botonBoxModelos a{
-    padding: 8px;
-    color: #e9eb9e;
-}
-.botonBoxModelos:hover{
-    transform: scale(1.03);
-}
-
-/*Seccion PROMOS*/
-
-.mainPromos{
+    margin-top: 120px; }
+    body .mainModelos .boxModelos {
+      background-color: #17a2b8;
+      margin: 0 20px 15px 20px;
+      width: 20rem;
+      height: 25rem;
+      border-radius: 5px;
+      border: solid 2px #ffc107;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 3rem 12rem 7rem 3rem;
+      grid-template-areas: "titulo titulo" "img img" "parrafo parrafo" "precio boton";
+      justify-items: center;
+      align-items: center; }
+      body .mainModelos .boxModelos h2 {
+        grid-area: titulo;
+        align-self: flex-end;
+        color: #49475b; }
+      body .mainModelos .boxModelos .imgBoxModelos {
+        grid-area: img;
+        width: 90%;
+        height: 10rem;
+        background-image: url(../multimedia/productos.png);
+        background-size: cover;
+        background-position: center; }
+      body .mainModelos .boxModelos .parrafoBoxModelos {
+        grid-area: parrafo;
+        width: 90%; }
+      body .mainModelos .boxModelos .precioBoxModelos {
+        grid-area: precio;
+        justify-self: left;
+        padding-left: 2rem; }
+      body .mainModelos .boxModelos .botonBoxModelos {
+        grid-area: boton;
+        background-color: #49475b;
+        border-radius: 2rem;
+        border: solid 3px #e9eb9e; }
+        body .mainModelos .boxModelos .botonBoxModelos a {
+          padding: 8px;
+          color: #e9eb9e; }
+      body .mainModelos .boxModelos .botonBoxModelos:hover {
+        transform: scale(1.03); }
+    body .mainModelos .boxModelos:hover {
+      transform: scale(1.03); }
+  body .mainPromos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 150px;
-}
-
-/*Seccion CONTACTO*/
-
-.mainContacto{
+    margin-top: 120px; }
+  body .mainContacto {
     height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 150px;
-}
-
-#mapaContacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;   
-}
-
-/*Seccion Pedidos*/
-
-.mainPedidos{
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-}
-
-/*Responsive*/
-
-@media screen and (max-width: 576px) {
-    .mainIndex{
-        margin-top: 230px;
-    }
-    .mainPedidos{
-        margin-top: 230px;
-    }
-    .mainModelos{
-        margin-top: 230px;
-    }
-    .mainPromos{
-        margin-top: 230px;
-    }
-    .mainContacto{
-        margin-top: 230px;
-    }
-    .borderRight{
-        border: none;
-    }
-    .footerContacto{
-        font-size: 14pt;
-    }
-    .footerDatos{
-        font-size: 9pt;
-    }
-}
+    margin-top: 120px; }
+  body .footer {
+    position: bottom;
+    height: 100%;
+    margin-top: 10rem;
+    padding: 1rem 0 2rem 0;
+    border-top: solid 3px #ffc107;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: "tituFoot imgFoot" "datosFoot imgFoot";
+    align-items: flex-start; }
+    body .footer .footerContacto {
+      grid-area: tituFoot;
+      padding-left: 15%;
+      font-size: 20pt;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-decoration: underline; }
+    body .footer .footerDatos {
+      grid-area: datosFoot;
+      padding-left: 15%; }
+    body .footer .imgFooter {
+      padding-right: 10%;
+      grid-area: imgFoot;
+      display: flex;
+      justify-content: flex-end; }
 
 /*Animaciones*/
+.promo1 {
+  animation-name: animaPromo1;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s; }
 
-.imgPortada{
-    animation-name: animaImgPortada;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-}
+.promo2 {
+  animation-name: animaPromo2;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s; }
 
-@keyframes animaImgPortada{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
+.promo3 {
+  animation-name: animaPromo3;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s; }
 
-.promo1{
-    animation-name: animaPromo1;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-}
-.promo2{
-    animation-name: animaPromo2;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-}
-.promo3{
-    animation-name: animaPromo3;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-}
+@keyframes animaPromo1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  60% {
+    opacity: 1; } }
 
-@keyframes animaPromo1{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px)
-    }
-    60%{
-        opacity: 1;
-    }
-}
+@keyframes animaPromo2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    opacity: 1; } }
 
-@keyframes animaPromo2{
-    0%{
-        opacity: 0;
-    }
-    20%{
-        opacity: 0;
-        transform: translateX(100px)
-    }
-    80%{
-        opacity: 1;
-    }
-}
+@keyframes animaPromo3 {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  100% {
+    opacity: 1; } }
 
-@keyframes animaPromo3{
-    0%{
-        opacity: 0;
-    }
-    40%{
-        opacity: 0;
-        transform: translateX(-100px)
-    }
-    100%{
-        opacity: 1;
-    }
-}
+#divContactoIzq {
+  animation-name: animaDivCont1;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s; }
 
-#divContactoIzq{
-    animation-name: animaDivCont1;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
-}
+#divContactoDer {
+  animation-name: animaDivCont2;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s; }
 
-#divContactoDer{
-    animation-name: animaDivCont2;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1.5s;
-}
+@keyframes animaDivCont1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); }
+  100% {
+    opacity: 1; } }
 
-@keyframes animaDivCont1{
-    0%{
-        opacity: 0;
-        transform: translateY(-100px)
-    }
-    100%{
-        opacity: 1;
-    }
-}
+@keyframes animaDivCont2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1; } }
 
-@keyframes animaDivCont2{
-    0%{
-        opacity: 0;
-        transform: translateY(100px)
-    }
-    100%{
-        opacity: 1;
-    }
-}
+/*Responsive*/
+@media screen and (max-width: 576px) {
+  body .borderRight {
+    border: none; }
+  .footerContacto {
+    font-size: 14pt; }
+  .footerDatos {
+    font-size: 9pt; }
+  .nav-link {
+    display: none; }
+  body .mainIndex .divPortada {
+    padding: 100px 2rem 100px 2rem; }
+  body .mainIndex .divPortada .portada {
+    width: 100%; }
+  body .mainIndex .divPortada .portada .portadaTitulo {
+    font-size: 40pt; }
+  body .mainIndex .divPortada .portada .fontDancing {
+    font-size: 36pt; }
+  body .hamburguesaNav {
+    display: flex; }
+  body .hamburguesaNav:hover {
+    transform: scale(1.04); } }
