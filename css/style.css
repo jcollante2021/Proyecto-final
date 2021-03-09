@@ -167,7 +167,6 @@ body {
     align-items: center;
     margin-top: 120px; }
   body .mainContacto {
-    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -175,7 +174,7 @@ body {
   body .footer {
     position: bottom;
     height: 100%;
-    margin-top: 10rem;
+    margin-top: 3rem;
     padding: 1rem 0 2rem 0;
     border-top: solid 3px #ffc107;
     display: grid;
@@ -194,7 +193,6 @@ body {
       grid-area: datosFoot;
       padding-left: 15%; }
     body .footer .imgFooter {
-      padding-right: 10%;
       grid-area: imgFoot;
       display: flex;
       justify-content: flex-end; }
@@ -274,9 +272,11 @@ body {
   body .borderRight {
     border: none; }
   .footerContacto {
-    font-size: 14pt; }
+    font-size: 11pt; }
   .footerDatos {
-    font-size: 9pt; }
+    font-size: 8pt; }
+  .imgFooter img {
+    width: 150px; }
   .nav-link {
     display: none; }
   body .mainIndex .divPortada {
@@ -290,4 +290,14 @@ body {
   body .hamburguesaNav {
     display: flex; }
   body .hamburguesaNav:hover {
-    transform: scale(1.04); } }
+    transform: scale(1.04); }
+  #divContactoIzq {
+    height: 450px; } }
+
+@media screen and (max-width: 767px) {
+  .flechaPasos {
+    transform: rotate(90deg); } }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .flechaDesaparece {
+    display: none; } }
