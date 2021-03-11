@@ -12,32 +12,35 @@
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-info navbar-dark fixed-top border border-top-0 border-right-0 border-left-0 border-warning">
-        <a class="navbar-brand flex-grow-1" href="../index.html"> <img class="logoHead" src="../multimedia/logoTresCuerdasHead.png" alt="logo TresCuerdas small"></a>
-        <ul class="navbar-nav">
-            <li class="borderRight nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="borderRight nav-item active"><a class="nav-link" href=".pedido.html">Pedido</a></li>
-            <li class="borderRight nav-item"><a class="nav-link" href="./modelos.html">Modelos</a></li>
-            <li class="borderRight nav-item"><a class="nav-link" href="./promos.html">Promos</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-        </ul>
-        <div class="hamburguesaNav dropdown" data-toggle="dropdown">
-            <div class="lineaHambur"></div>
-            <div class="lineaHambur"></div>
-            <div class="lineaHambur"></div>
-        </div>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="../index.html">Inicio</a>
-            <a class="dropdown-item" href="./pedido.html">Pedidos</a>
-            <a class="dropdown-item" href="./modelos.html">Modelos</a>
-            <a class="dropdown-item" href="./promos.html">Promos</a>
-            <a class="dropdown-item" href="./contacto.html">Contacto</a>
-        </div>
+    <nav class="navbar navbar-expand-md bg-info navbar-dark fixed-top border border-top-0 border-right-0 border-left-0 border-warning">
+        <a class="navbar-brand flex-grow-1" href="../index.html"><img class="logoHead" src="../multimedia/logoTresCuerdasHead.png" alt="logo TresCuerdas small"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="borderRight nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="borderRight nav-item active">
+                    <a class="nav-link" href="./pedido.html">Pedido</a>
+                </li>
+                <li class="borderRight nav-item">
+                    <a class="nav-link" href="./modelos.html">Modelos</a>
+                </li>
+                <li class="borderRight nav-item">
+                    <a class="nav-link" href="./promos.html">Promos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>     
+            </ul>
+        </div>  
     </nav>
     <main class="mainPedidos">
-        <div class="bg-info container d-flex justify-content-center p-4 border border-warning shadow ">
+        <!--<div class="bg-info container d-flex justify-content-center p-4 border border-warning shadow ">-->
             <form action="" class="w-75">
-                <div class="container p-2 border border border-warning shadow">
+                <div class="container p-2 border border border-warning bg-info shadow">
                     <h2>Datos Personales</h2>
                     <div class="form-group">
                         <label for="text">Nombre y Apellido:</label>
@@ -48,7 +51,7 @@
                         <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electronico" name="email">
                     </div>
                 </div>
-                <div class="container p-2 mt-3 mb-3 border border-warning shadow">
+                <div class="container p-2 mt-3 mb-3 border border-warning bg-info shadow">
                     <h2>Datos del Pedido</h2>
                     <div class="form-group">
                         <label for="sel1">Seleccione el Modelo a Imprimir:</label>
@@ -81,10 +84,9 @@
                 </div>
                 <div class="container d-flex justify-content-between flex-wrap">
                     <input type="reset" value="Limpiar formulario" class="btn btn-warning btn-lg my-2"/>
-                    <input type="submit" value="Realizar Pedido" class="btn btn-warning btn-lg my-2"/>
+                    <input type="submit" value="Realizar Pedido" class="btn btn-success btn-lg my-2"/>
                 </div>
             </form>
-        </div>
     </main>
     <div class="footer container-fluid bg-info p-6 border border-bottom-0 border-right-0 border-left-0 border-warning">
         <div>

@@ -12,27 +12,6 @@ body {
     width: 6rem; }
   body .borderRight {
     border-right: solid 1px #49475b; }
-  body .hamburguesaNav {
-    width: 40px;
-    height: 40px;
-    background-color: #ffc107;
-    position: absolute;
-    right: 30px;
-    top: 25%;
-    border-radius: 5px;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; }
-  body .dropdown-menu {
-    margin-left: 50%;
-    right: 30px; }
-  body .lineaHambur {
-    background-color: black;
-    width: 70%;
-    height: 4px;
-    margin: 3px; }
   body .mainIndex {
     display: flex;
     flex-direction: column;
@@ -269,16 +248,12 @@ body {
 
 /*Responsive*/
 @media screen and (max-width: 576px) {
-  body .borderRight {
-    border: none; }
   .footerContacto {
     font-size: 11pt; }
   .footerDatos {
     font-size: 8pt; }
   .imgFooter img {
     width: 150px; }
-  .nav-link {
-    display: none; }
   body .mainIndex .divPortada {
     padding: 100px 2rem 100px 2rem; }
   body .mainIndex .divPortada .portada {
@@ -287,16 +262,23 @@ body {
     font-size: 40pt; }
   body .mainIndex .divPortada .portada .fontDancing {
     font-size: 36pt; }
-  body .hamburguesaNav {
-    display: flex; }
-  body .hamburguesaNav:hover {
-    transform: scale(1.04); }
   #divContactoIzq {
     height: 450px; } }
 
 @media screen and (max-width: 767px) {
   .flechaPasos {
     transform: rotate(90deg); } }
+
+@media screen and (min-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    right: 30px; } }
+
+@media screen and (max-width: 767px) {
+  body .borderRight {
+    border-right: none; }
+  .nav-link {
+    font-size: 25pt; } }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .flechaDesaparece {
