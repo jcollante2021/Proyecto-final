@@ -11,7 +11,7 @@ body {
   body .logoHead {
     width: 6rem; }
   body .borderRight {
-    border-right: solid 1px #49475b; }
+    border-right: solid 1px #158697; }
   body .mainIndex {
     display: flex;
     flex-direction: column;
@@ -36,11 +36,12 @@ body {
           font-size: 39pt;
           color: #ffc107; }
     body .mainIndex #comoFunciona {
-      font-weight: 600;
-      font-size: 25pt;
+      font-weight: 400;
+      font-family: 'Dancing Script', cursive;
+      font-size: 55pt;
       padding: 40px 0 25px 0;
-      color: #14080e;
-      text-transform: uppercase; }
+      color: #0a3d62;
+      text-transform: capitalize; }
     body .mainIndex .pasosIndex {
       width: 90vw;
       display: flex;
@@ -48,7 +49,7 @@ body {
       justify-content: space-around;
       align-items: center; }
       body .mainIndex .pasosIndex .comoBoxFunciona {
-        background-color: #49475b;
+        background-color: #D4A95B;
         color: white;
         width: 20%;
         height: 12rem;
@@ -59,7 +60,7 @@ body {
         justify-content: center;
         align-content: center;
         text-align: center;
-        border: solid 2px #e9eb9e;
+        border: solid 2px #ffc107;
         border-radius: 8px;
         padding: 5px; }
         body .mainIndex .pasosIndex .comoBoxFunciona .iconoBoxFunciona {
@@ -90,6 +91,18 @@ body {
         animation-iteration-count: 1;
         animation-timing-function: ease-in-out;
         animation-duration: 1s; }
+    body .mainIndex .boxQuienSoy {
+      background-color: #EB7371; }
+      body .mainIndex .boxQuienSoy #tituloQuienSoy {
+        color: #0a3d62;
+        font-weight: 400;
+        font-family: 'Dancing Script', cursive;
+        font-size: 55pt; }
+      body .mainIndex .boxQuienSoy #parrafoQuienSoy {
+        font-weight: 300;
+        color: white; }
+      body .mainIndex .boxQuienSoy .imgQuienSoy {
+        bottom: 0; }
   body .mainPedidos {
     margin-top: 120px;
     display: flex;
@@ -155,11 +168,10 @@ body {
   body .footer {
     position: bottom;
     height: 100%;
-    margin-top: 3rem;
     padding: 1rem 0 2rem 0;
     border-top: solid 3px #ffc107;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 60% 40%;
     grid-template-rows: 25% 75%;
     grid-template-areas: "tituFoot imgFoot" "datosFoot imgFoot";
     align-items: flex-start; }
@@ -174,9 +186,9 @@ body {
       grid-area: datosFoot;
       padding-left: 15%; }
     body .footer .icon {
-      margin: 10px 10px;
-      width: 50px;
-      height: 50px;
+      margin: 8px 8px;
+      width: 45px;
+      height: 45px;
       display: inline-block;
       border-radius: 10px;
       background-color: #fae8f6;
@@ -205,7 +217,7 @@ body {
       background-position: 75% 75%;
       top: 0;
       left: 0;
-      line-height: 50px;
+      line-height: 45px;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: backround .5s linear; }
@@ -310,6 +322,46 @@ body {
   100% {
     transform: rotate(0deg); } }
 
+.nav-link {
+  animation-name: navInicia;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s; }
+
+@keyframes navInicia {
+  0% {
+    opacity: 0;
+    padding: .5rem 1.5rem .5rem 1.5rem; }
+  100% {
+    opacity: 1;
+    padding: .5rem .5rem .5rem .5rem; } }
+
+.navbar-toggler {
+  animation-name: iconSpin;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s; }
+
+@keyframes iconSpin {
+  0% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(-360deg); } }
+
+#imgQuienSoy {
+  animation-name: imgMove;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 15s; }
+
+@keyframes imgMove {
+  0% {
+    transform: translateX(25px); }
+  50% {
+    transform: translateX(-25px); }
+  100% {
+    transform: translateX(25px); } }
+
 /*Responsive*/
 @media screen and (max-width: 576px) {
   .footerContacto {
@@ -317,7 +369,7 @@ body {
   .footerDatos {
     font-size: 8pt; }
   .imgFooter img {
-    width: 150px; }
+    width: 120px; }
   body .mainIndex .divPortada {
     padding: 100px 2rem 100px 2rem; }
   body .mainIndex .divPortada .portada {
@@ -342,7 +394,9 @@ body {
   body .borderRight {
     border-right: none; }
   .nav-link {
-    font-size: 25pt; } }
+    font-size: 25pt; }
+  #imgQuienSoy {
+    display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .flechaDesaparece {

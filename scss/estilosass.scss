@@ -16,7 +16,7 @@ body{
         width: 6rem;
     }
     .borderRight{
-        border-right: solid 1px #49475b;
+        border-right: solid 1px #158697;
     }
     .mainIndex{
         display: flex;
@@ -46,11 +46,12 @@ body{
             }
         }
         #comoFunciona{
-            font-weight: 600;
-            font-size: 25pt;
+            font-weight: 400;
+            font-family: 'Dancing Script', cursive;
+            font-size: 55pt;
             padding: 40px 0 25px 0;
-            color: #14080e;
-            text-transform: uppercase;
+            color: #0a3d62;
+            text-transform: capitalize;
         }  
         .pasosIndex{
             width: 90vw;
@@ -59,7 +60,7 @@ body{
             justify-content: space-around;
             align-items: center;
             .comoBoxFunciona{
-                background-color: #49475b;
+                background-color: #D4A95B;
                 color: white;
                 width: 20%;
                 height: 12rem;
@@ -70,7 +71,7 @@ body{
                 justify-content: center;
                 align-content: center;
                 text-align: center;
-                border: solid 2px #e9eb9e;
+                border: solid 2px $amarillo;
                 border-radius: 8px;
                 padding: 5px;
                 .iconoBoxFunciona{
@@ -109,7 +110,24 @@ body{
                 animation-timing-function: ease-in-out;
                 animation-duration: 1s;
             }
-        } 
+        }
+        .boxQuienSoy{
+                background-color:#EB7371;
+            #tituloQuienSoy{
+                color: #0a3d62;
+                font-weight: 400;
+                font-family: 'Dancing Script', cursive;
+                font-size: 55pt;
+            } 
+            #parrafoQuienSoy{
+                font-weight: 300;
+                color: white;
+            }
+            .imgQuienSoy{
+                bottom: 0;
+            }
+        }
+        
     }
     .mainPedidos{
         margin-top: 120px;
@@ -193,11 +211,10 @@ body{
     .footer{
         position: bottom;
         height: 100%;
-        margin-top: 3rem;
         padding: 1rem 0 2rem 0;
         border-top: solid 3px $amarillo ;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 60% 40%;
         grid-template-rows: 25% 75%;
         grid-template-areas: 
             "tituFoot imgFoot"
@@ -216,9 +233,9 @@ body{
             padding-left:15%;
         }
         .icon{
-            margin: 10px 10px;
-            width: 50px;
-            height: 50px;
+            margin: 8px 8px;
+            width: 45px;
+            height: 45px;
             display: inline-block;
             border-radius: 10px;
             background-color: rgb(250, 232, 246);
@@ -254,7 +271,7 @@ body{
             background-position: 75% 75%;
             top: 0;
             left: 0;
-            line-height: 50px;
+            line-height: 45px;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: backround .5s linear;
@@ -399,6 +416,60 @@ body{
     }
 }
 
+.nav-link{
+    animation-name: navInicia;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+}
+
+@keyframes navInicia{
+    0%{
+        opacity: 0;
+        padding: .5rem 1.5rem .5rem 1.5rem ;
+    }
+    100%{
+        opacity: 1;
+        padding: .5rem .5rem .5rem .5rem;
+    }
+}
+
+.navbar-toggler{
+    animation-name: iconSpin;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes iconSpin{
+    0%{
+       transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+#imgQuienSoy{
+    animation-name: imgMove;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+}
+
+@keyframes imgMove{
+    0%{
+        transform: translateX(25px);
+    }
+    50%{
+        transform: translateX(-25px);
+    }
+    100%{
+        transform: translateX(25px);
+    }
+}
+    
+
 
 /*Responsive*/
 
@@ -410,7 +481,7 @@ body{
         font-size: 8pt;
     }
     .imgFooter img{
-        width: 150px;
+        width: 120px;
     }
     body .mainIndex .divPortada{
         padding: 100px 2rem 100px 2rem;
@@ -448,6 +519,9 @@ body{
     }
     .nav-link{
         font-size: 25pt;
+    }
+    #imgQuienSoy{
+        display: none;
     }
 }
 
