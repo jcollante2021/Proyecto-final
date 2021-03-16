@@ -48,6 +48,7 @@ body{
         #comoFunciona{
             font-weight: 400;
             font-family: 'Dancing Script', cursive;
+            text-align: center;
             font-size: 55pt;
             padding: 40px 0 25px 0;
             color: #0a3d62;
@@ -66,23 +67,32 @@ body{
                 height: 12rem;
                 display: flex;
                 flex-direction: column;
-                justify-items: center;
                 align-items: center;
                 justify-content: center;
-                align-content: center;
                 text-align: center;
                 border: solid 2px $amarillo;
                 border-radius: 8px;
-                padding: 5px;
+                box-shadow: 6px 6px 12px rgba(0,0,0,.15),
+                        -6px -6px 12px rgba(255,255,255,.1);
                 .iconoBoxFunciona{
-                    background-position: center;
-                    background-size: cover;
+                    background-color: white;
                     width: 4rem;
                     height: 4rem;
                     border: solid 1px black;
                     border-radius: 50%;
                     padding: 5px;
                     margin-bottom: 15px;
+                    position: relative;
+                    i{
+                        color: #0a3d62;
+                        font-size: 28pt;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        top: .8rem;
+                        left: 0;
+                        position: absolute;
+                    }
                 }
             }
             .flechaPasos{
@@ -91,18 +101,6 @@ body{
                 background-size: cover;
                 width: 1rem;
                 height: 1rem;
-            }
-            .imgPaso1{
-                background-image: url(../multimedia/iconoPaso1.jpg);
-            }
-            .imgPaso2{
-                background-image: url(../multimedia/iconoPaso2.jpg);
-            }
-            .imgPaso3{
-                background-image: url(../multimedia/iconoPaso3.jpg);
-            }
-            .imgPaso4{
-                background-image: url(../multimedia/iconoPaso4.jpg);
             }
             .comoBoxFunciona:hover{
                 animation-name: boxSacude;
@@ -121,7 +119,9 @@ body{
             } 
             #parrafoQuienSoy{
                 font-weight: 300;
+                font-size: 16pt;
                 color: white;
+                text-align: center;
             }
             .imgQuienSoy{
                 bottom: 0;
@@ -133,6 +133,13 @@ body{
         margin-top: 120px;
         display: flex;
         justify-content: center;
+        .tituloPedidos{
+            font-family: 'Dancing Script', cursive;
+            font-weight: 700;
+            font-size: 39pt;
+            color: $amarillo;
+            text-align: center;
+        }
     }
     .mainModelos{
         display: flex;
@@ -141,7 +148,7 @@ body{
         justify-content: center;
         margin-top: 120px;
         .boxModelos{
-            background-color: $verde;
+            background-color: #D4A95B;
             margin: 0 20px 15px 20px;
             width: 20rem;
             border-radius: 5px;
@@ -157,26 +164,60 @@ body{
             justify-items: center;
             align-items: center;
             h2{
+                margin: 3rem 0 2rem 0;
+                font-family: 'Dancing Script', cursive;
+                font-weight: 700;
+                font-size: 30pt;
                 grid-area: titulo;
-                align-self: flex-end;
-                color: #49475b;
+                text-align: center;
+                color: #0a3d62;
             }
             .imgBoxModelos{
                 grid-area: img;
                 width: 90%;
                 height: 10rem;
-                background-image: url(../multimedia/productos.png);
+                transition-duration: .5s;
+            }
+            .imgProdPola{
+                background-image: url(../multimedia/productosPolaroid.png);
+                background-size: cover;
+                background-position: center;
+            }
+            .imgProdSquare{
+                background-image: url(../multimedia/productosSquare.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .imgProdClasica{
+                background-image: url(../multimedia/productosClasica.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .imgProdMediana{
+                background-image: url(../multimedia/productosMediana.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .imgProdGrande{
+                background-image: url(../multimedia/productosGrande.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+            .imgProdGigante{
+                background-image: url(../multimedia/productosGigante.jpg);
                 background-size: cover;
                 background-position: center;
             }
             .parrafoBoxModelos{
                 grid-area: parrafo;
                 width: 90%;
+                text-align: center;
+                color: white;
             }
             .precioBoxModelos{
                 grid-area: precio;
                 justify-self: left;
-                padding-left: 2rem;
+                padding-left: .5rem;
             }
             .botonBoxModelos{
                 grid-area: boton;
@@ -188,12 +229,17 @@ body{
                     color: #e9eb9e;
                 }
             }
-            .botonBoxModelos:hover{
-                transform: scale(1.03);
+            .badge{
+                font-size: 10pt;
             }
         }
         .boxModelos:hover{
-            transform: scale(1.03);
+            .imgBoxModelos{
+                transform: scale(1.06);
+                box-shadow: 6px 6px 12px rgba(0,0,0,.15),
+                        -6px -6px 12px rgba(255,255,255,.1);
+            }
+            
         }  
     }
     .mainPromos{
@@ -201,18 +247,43 @@ body{
         flex-direction: column;
         align-items: center;
         margin-top: 120px;
+        margin-bottom: 50px;
+        .promoBox{
+            background-color: #D4A95B;
+            transition-duration: 2s;
+        }
+        .promoBox:hover{
+            img{
+                transition-duration: 1s;
+                transform: scale(1.15);
+                box-shadow: 12px 12px 24px rgba(0,0,0,.15),
+                        -6px -6px 12px rgba(255,255,255,.1);
+            }
+            
+        } 
     }
     .mainContacto{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin-top: 120px;
+        margin-bottom: 130px;
+        #divContactoIzq{
+            background-color: #EB7371;
+            .textContacto{
+                font-weight: 400;
+                font-family: 'Dancing Script', cursive;
+                font-size: 30pt;
+            }
+            .parrafoContacto{
+                font-size: 10pt;
+            }
+        }
+        #divContactoDer{
+            background-color: #EB7371;
+        }
     }
     .footer{
-        position: bottom;
-        height: 100%;
-        padding: 1rem 0 2rem 0;
-        border-top: solid 3px $amarillo ;
         display: grid;
         grid-template-columns: 60% 40%;
         grid-template-rows: 25% 75%;
@@ -290,24 +361,59 @@ body{
 }
 
 /*Animaciones*/
+.pedidoTop{
+    animation-name: animaPedido1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+.pedidoBottom{
+    animation-name: animaPedido2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+@keyframes animaPedido1{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    60%{
+        opacity: 1;
+    }
+}
+
+@keyframes animaPedido2{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+        transform: translateX(100px)
+    }
+    80%{
+        opacity: 1;
+    }
+}
 
 .promo1{
     animation-name: animaPromo1;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 .promo2{
     animation-name: animaPromo2;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 .promo3{
     animation-name: animaPromo3;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 
 @keyframes animaPromo1{
@@ -416,7 +522,7 @@ body{
     }
 }
 
-.nav-link{
+.navAnimaIndex{
     animation-name: navInicia;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
@@ -496,7 +602,7 @@ body{
         font-size: 36pt;
     }
     #divContactoIzq{
-        height: 450px;
+        height: 800px;
     }
 }
 

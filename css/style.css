@@ -38,6 +38,7 @@ body {
     body .mainIndex #comoFunciona {
       font-weight: 400;
       font-family: 'Dancing Script', cursive;
+      text-align: center;
       font-size: 55pt;
       padding: 40px 0 25px 0;
       color: #0a3d62;
@@ -55,37 +56,36 @@ body {
         height: 12rem;
         display: flex;
         flex-direction: column;
-        justify-items: center;
         align-items: center;
         justify-content: center;
-        align-content: center;
         text-align: center;
         border: solid 2px #ffc107;
         border-radius: 8px;
-        padding: 5px; }
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.1); }
         body .mainIndex .pasosIndex .comoBoxFunciona .iconoBoxFunciona {
-          background-position: center;
-          background-size: cover;
+          background-color: white;
           width: 4rem;
           height: 4rem;
           border: solid 1px black;
           border-radius: 50%;
           padding: 5px;
-          margin-bottom: 15px; }
+          margin-bottom: 15px;
+          position: relative; }
+          body .mainIndex .pasosIndex .comoBoxFunciona .iconoBoxFunciona i {
+            color: #0a3d62;
+            font-size: 28pt;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            top: .8rem;
+            left: 0;
+            position: absolute; }
       body .mainIndex .pasosIndex .flechaPasos {
         background-image: url(../multimedia/flecha.png);
         background-position: center;
         background-size: cover;
         width: 1rem;
         height: 1rem; }
-      body .mainIndex .pasosIndex .imgPaso1 {
-        background-image: url(../multimedia/iconoPaso1.jpg); }
-      body .mainIndex .pasosIndex .imgPaso2 {
-        background-image: url(../multimedia/iconoPaso2.jpg); }
-      body .mainIndex .pasosIndex .imgPaso3 {
-        background-image: url(../multimedia/iconoPaso3.jpg); }
-      body .mainIndex .pasosIndex .imgPaso4 {
-        background-image: url(../multimedia/iconoPaso4.jpg); }
       body .mainIndex .pasosIndex .comoBoxFunciona:hover {
         animation-name: boxSacude;
         animation-iteration-count: 1;
@@ -100,13 +100,21 @@ body {
         font-size: 55pt; }
       body .mainIndex .boxQuienSoy #parrafoQuienSoy {
         font-weight: 300;
-        color: white; }
+        font-size: 16pt;
+        color: white;
+        text-align: center; }
       body .mainIndex .boxQuienSoy .imgQuienSoy {
         bottom: 0; }
   body .mainPedidos {
     margin-top: 120px;
     display: flex;
     justify-content: center; }
+    body .mainPedidos .tituloPedidos {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 700;
+      font-size: 39pt;
+      color: #ffc107;
+      text-align: center; }
   body .mainModelos {
     display: flex;
     flex-direction: row;
@@ -114,7 +122,7 @@ body {
     justify-content: center;
     margin-top: 120px; }
     body .mainModelos .boxModelos {
-      background-color: #17a2b8;
+      background-color: #D4A95B;
       margin: 0 20px 15px 20px;
       width: 20rem;
       border-radius: 5px;
@@ -126,23 +134,51 @@ body {
       justify-items: center;
       align-items: center; }
       body .mainModelos .boxModelos h2 {
+        margin: 3rem 0 2rem 0;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 30pt;
         grid-area: titulo;
-        align-self: flex-end;
-        color: #49475b; }
+        text-align: center;
+        color: #0a3d62; }
       body .mainModelos .boxModelos .imgBoxModelos {
         grid-area: img;
         width: 90%;
         height: 10rem;
-        background-image: url(../multimedia/productos.png);
+        transition-duration: .5s; }
+      body .mainModelos .boxModelos .imgProdPola {
+        background-image: url(../multimedia/productosPolaroid.png);
+        background-size: cover;
+        background-position: center; }
+      body .mainModelos .boxModelos .imgProdSquare {
+        background-image: url(../multimedia/productosSquare.jpg);
+        background-size: cover;
+        background-position: center; }
+      body .mainModelos .boxModelos .imgProdClasica {
+        background-image: url(../multimedia/productosClasica.jpg);
+        background-size: cover;
+        background-position: center; }
+      body .mainModelos .boxModelos .imgProdMediana {
+        background-image: url(../multimedia/productosMediana.jpg);
+        background-size: cover;
+        background-position: center; }
+      body .mainModelos .boxModelos .imgProdGrande {
+        background-image: url(../multimedia/productosGrande.jpg);
+        background-size: cover;
+        background-position: center; }
+      body .mainModelos .boxModelos .imgProdGigante {
+        background-image: url(../multimedia/productosGigante.jpg);
         background-size: cover;
         background-position: center; }
       body .mainModelos .boxModelos .parrafoBoxModelos {
         grid-area: parrafo;
-        width: 90%; }
+        width: 90%;
+        text-align: center;
+        color: white; }
       body .mainModelos .boxModelos .precioBoxModelos {
         grid-area: precio;
         justify-self: left;
-        padding-left: 2rem; }
+        padding-left: .5rem; }
       body .mainModelos .boxModelos .botonBoxModelos {
         grid-area: boton;
         background-color: #49475b;
@@ -151,25 +187,41 @@ body {
         body .mainModelos .boxModelos .botonBoxModelos a {
           padding: 8px;
           color: #e9eb9e; }
-      body .mainModelos .boxModelos .botonBoxModelos:hover {
-        transform: scale(1.03); }
-    body .mainModelos .boxModelos:hover {
-      transform: scale(1.03); }
+      body .mainModelos .boxModelos .badge {
+        font-size: 10pt; }
+    body .mainModelos .boxModelos:hover .imgBoxModelos {
+      transform: scale(1.06);
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.1); }
   body .mainPromos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px; }
+    margin-top: 120px;
+    margin-bottom: 50px; }
+    body .mainPromos .promoBox {
+      background-color: #D4A95B;
+      transition-duration: 2s; }
+    body .mainPromos .promoBox:hover img {
+      transition-duration: 1s;
+      transform: scale(1.15);
+      box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.1); }
   body .mainContacto {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 120px; }
+    margin-top: 120px;
+    margin-bottom: 130px; }
+    body .mainContacto #divContactoIzq {
+      background-color: #EB7371; }
+      body .mainContacto #divContactoIzq .textContacto {
+        font-weight: 400;
+        font-family: 'Dancing Script', cursive;
+        font-size: 30pt; }
+      body .mainContacto #divContactoIzq .parrafoContacto {
+        font-size: 10pt; }
+    body .mainContacto #divContactoDer {
+      background-color: #EB7371; }
   body .footer {
-    position: bottom;
-    height: 100%;
-    padding: 1rem 0 2rem 0;
-    border-top: solid 3px #ffc107;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 25% 75%;
@@ -229,23 +281,51 @@ body {
       justify-content: flex-end; }
 
 /*Animaciones*/
+.pedidoTop {
+  animation-name: animaPedido1;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s; }
+
+.pedidoBottom {
+  animation-name: animaPedido2;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s; }
+
+@keyframes animaPedido1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  60% {
+    opacity: 1; } }
+
+@keyframes animaPedido2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    opacity: 1; } }
+
 .promo1 {
   animation-name: animaPromo1;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  animation-duration: 3s; }
+  animation-duration: 1.5s; }
 
 .promo2 {
   animation-name: animaPromo2;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  animation-duration: 3s; }
+  animation-duration: 1.5s; }
 
 .promo3 {
   animation-name: animaPromo3;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
-  animation-duration: 3s; }
+  animation-duration: 1.5s; }
 
 @keyframes animaPromo1 {
   0% {
@@ -322,7 +402,7 @@ body {
   100% {
     transform: rotate(0deg); } }
 
-.nav-link {
+.navAnimaIndex {
   animation-name: navInicia;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
@@ -379,7 +459,7 @@ body {
   body .mainIndex .divPortada .portada .fontDancing {
     font-size: 36pt; }
   #divContactoIzq {
-    height: 450px; } }
+    height: 800px; } }
 
 @media screen and (max-width: 767px) {
   .flechaPasos {
