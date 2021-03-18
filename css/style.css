@@ -147,7 +147,7 @@ body {
         height: 10rem;
         transition-duration: .5s; }
       body .mainModelos .boxModelos .imgProdPola {
-        background-image: url(../multimedia/productosPolaroid.png);
+        background-image: url(../multimedia/productosPolaroid.jpg);
         background-size: cover;
         background-position: center; }
       body .mainModelos .boxModelos .imgProdSquare {
