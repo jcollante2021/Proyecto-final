@@ -201,6 +201,8 @@ body {
     body .mainPromos .promoBox {
       background-color: #D4A95B;
       transition-duration: 2s; }
+      body .mainPromos .promoBox .parrafoPromo {
+        font-size: 12pt; }
     body .mainPromos .promoBox:hover img {
       transition-duration: 1s;
       transform: scale(1.15);
@@ -281,6 +283,30 @@ body {
       justify-content: flex-end; }
 
 /*Animaciones*/
+.portada {
+  animation-name: animaPortada;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s; }
+
+@keyframes animaPortada {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.boxModelos {
+  animation-name: animaModelosBox;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s; }
+
+@keyframes animaModelosBox {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .pedidoTop {
   animation-name: animaPedido1;
   animation-iteration-count: 1;
@@ -459,11 +485,13 @@ body {
   body .mainIndex .divPortada .portada .fontDancing {
     font-size: 36pt; }
   #divContactoIzq {
-    height: 800px; } }
+    height: 500px; } }
 
 @media screen and (max-width: 767px) {
   .flechaPasos {
-    transform: rotate(90deg); } }
+    transform: rotate(90deg); }
+  .parrafoPromo {
+    text-align: center; } }
 
 @media screen and (min-width: 768px) {
   .navbar-collapse {
